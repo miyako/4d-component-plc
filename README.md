@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/github/license/miyako/4d-component-plc)](LICENSE)
 
 # 4d-component-plc
-三菱電機汎用シーケンサ MELSEC シリーズのPLC実装
+三菱電機汎用シーケンサ MELSEC シリーズのPLC実装サンプル
 
 #### 依存ライブラリ等
 
