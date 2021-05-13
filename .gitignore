@@ -1,0 +1,8 @@
+/PLC/Components/libplc/Project/DerivedData/*
+/PLC/userPreferences.miyako/*
+/PLC/Project/DerivedData/*
+/PLC/Components/libplc/userPreferences.miyako/*
+*.journal
+*.Match
+*.4DD
+*.log

@@ -1,0 +1,59 @@
+﻿{
+	"error": {
+		"methods": [
+			"generic_error_method"
+		]
+	},
+	"function": {
+		"methods": [
+			"ascii_to_data",
+			"bits_to_ascii",
+			"bits_to_data",
+			"data_to_bits",
+			"data_to_hex",
+			"data_to_text",
+			"hex_to_data",
+			"hex_to_int",
+			"int_to_hex"
+		]
+	},
+	"method": {
+		"methods": [
+			"get_request",
+			"set_response"
+		]
+	},
+	"protocol": {
+		"methods": [
+			"get_command_code",
+			"get_data",
+			"get_device_code",
+			"get_device_points",
+			"get_device_position",
+			"get_interface_code",
+			"get_length",
+			"get_network_code",
+			"get_request_subheader",
+			"get_response_subheader",
+			"get_wait"
+		]
+	},
+	"singleton": {
+		"methods": [
+			"MELSEC",
+			"PLC_shared"
+		]
+	},
+	"test": {
+		"methods": [
+			"TEST_api",
+			"TEST_ascii",
+			"TEST_bits",
+			"TEST_error",
+			"TEST_hex",
+			"TEST_shared",
+			"TEST_srv"
+		]
+	},
+	"trash": {}
+}
