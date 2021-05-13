@@ -4,6 +4,15 @@
 			"generic_error_method"
 		]
 	},
+	"fake controller": {
+		"methods": [
+			"srv_get_int",
+			"srv_get_part",
+			"srv_process",
+			"srv_start",
+			"srv_stop"
+		]
+	},
 	"function": {
 		"methods": [
 			"ascii_to_data",
@@ -40,8 +49,7 @@
 	},
 	"singleton": {
 		"methods": [
-			"MELSEC",
-			"PLC_shared"
+			"MELSEC"
 		]
 	},
 	"test": {
@@ -51,7 +59,6 @@
 			"TEST_bits",
 			"TEST_error",
 			"TEST_hex",
-			"TEST_shared",
 			"TEST_srv"
 		]
 	},
