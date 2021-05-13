@@ -3,3 +3,12 @@
 
 # 4d-component-plc
 三菱電機汎用シーケンサ MELSEC シリーズのPLC実装
+
+#### 依存ライブラリ等
+
+[NTK Plugin](https://www.pluggers.nl/product/ntk-plugin/)
+
+* TCP Open
+* TCP Send Blob
+* TCP Get State
+* TCP Receive Blob
