@@ -12,3 +12,5 @@
 * TCP Send Blob
 * TCP Get State
 * TCP Receive Blob
+* TCP Close
+
