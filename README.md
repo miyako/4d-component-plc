@@ -17,7 +17,7 @@
 #### 要求/応答
 
 ```4d
-$PLC:=PLC ("MELSEC-Q/L";True)  //バイナリ形式; TrueでASCII形式
+$PLC:=PLC ("MELSEC-Q/L";False)  //バイナリ形式; TrueでASCII形式
 
 $params:=New object
 $params.host:="192.168.1.30"  //IPアドレス
