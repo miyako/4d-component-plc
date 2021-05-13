@@ -29,16 +29,7 @@ $params.deviceCode:="B"  //B=リンクリレー|D=データレジスタ|W=リン
 $params.mode:="read,word"  //read=読込|write=書込; word|bit
 $params.points:=20  //デバイス点数
 $params.timeout:=10
-$params.returnText:=True
-
-$response:=$PLC.request($params)
-
-/*
-	binary response: D00000FFFF03000600000034120200
-	ascii  response: D00000FF03FF00000C000012340002
-*/
-
-$params.returnText:=False
+$params.returnText:=True //FalseでBLOBをそのまま返す
 
 $response:=$PLC.request($params)
 ```
