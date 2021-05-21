@@ -23,7 +23,10 @@
 			"data_to_text",
 			"hex_to_data",
 			"hex_to_int",
-			"int_to_hex"
+			"int_to_ascii_data",
+			"int_to_data",
+			"int_to_hex",
+			"int_to_hex_data"
 		]
 	},
 	"method": {
@@ -37,8 +40,8 @@
 			"get_command_code",
 			"get_data",
 			"get_device_code",
+			"get_device_number",
 			"get_device_points",
-			"get_device_position",
 			"get_interface_code",
 			"get_length",
 			"get_network_code",
@@ -57,6 +60,7 @@
 			"TEST_api",
 			"TEST_ascii",
 			"TEST_bits",
+			"TEST_device",
 			"TEST_error",
 			"TEST_hex",
 			"TEST_srv"

@@ -16,7 +16,7 @@ $EXPORT.getCommandCode:=Formula:C1597(get_command_code )
 $EXPORT.getNetworkCode:=Formula:C1597(get_network_code )
 $EXPORT.getInterfaceCode:=Formula:C1597(get_interface_code )
 $EXPORT.getWait:=Formula:C1597(get_wait )
-$EXPORT.getDevicePosition:=Formula:C1597(get_device_position )
+$EXPORT.getDeviceNumber:=Formula:C1597(get_device_number )
 $EXPORT.getData:=Formula:C1597(get_data )
 $EXPORT.getLength:=Formula:C1597(get_length )
 $EXPORT.getDevicePoints:=Formula:C1597(get_device_points )
@@ -30,6 +30,7 @@ $EXPORT.append:=Formula:C1597(COPY BLOB:C558($2->;$1->;0;BLOB size:C605($1->);BL
 
 $EXPORT.mode:="read"
 $EXPORT.deviceCode:="B"
+$EXPORT.deviceNumber:=0  //先頭デバイス番号
 $EXPORT.wait:=16  //監視タイマ; 16x250ms=4秒)
 $EXPORT.timeout:=3  //送受信タイムアウト/秒
 

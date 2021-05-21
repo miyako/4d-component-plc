@@ -24,6 +24,13 @@ If (Value type:C1509($params.deviceCode)#Is text:K8:3)
 	$params.deviceCode:=This:C1470.deviceCode
 End if 
 
+Case of 
+	: (Value type:C1509($params.deviceNumber)=Is text:K8:3)
+	: (Value type:C1509($params.deviceNumber)=Is real:K8:4)
+	Else 
+		$params.deviceNumber:=This:C1470.deviceNumber
+End case 
+
 If (Value type:C1509($params.points)#Is real:K8:4)
 	$params.points:=0
 End if 
@@ -33,14 +40,14 @@ $networkCode:=This:C1470.getNetworkCode()  //アクセス経路（ネットワ�
 $interfaceCode:=This:C1470.getInterfaceCode()  //アクセス経路（要求先ユニットI/O番号・要求先ユニット局番号）
 $wait:=This:C1470.getWait($params.wait)  //監視タイマ
 $command:=This:C1470.getCommandCode($params.mode)  //コマンド・サブコマンド
-$position:=This:C1470.getDevicePosition()  //先頭デバイス番号（固定値）
+$deviceNumber:=This:C1470.getDeviceNumber($params.deviceNumber)  //先頭デバイス番号
 $deviceCode:=This:C1470.getDeviceCode($params.deviceCode)  //デバイスコード
 $points:=This:C1470.getDevicePoints($params.points)  //デバイス点数
 
 $length:=This:C1470.getLength(\
 BLOB size:C605($wait)+\
 BLOB size:C605($command)+\
-BLOB size:C605($position)+\
+BLOB size:C605($deviceNumber)+\
 BLOB size:C605($deviceCode)+\
 BLOB size:C605($points)+\
 BLOB size:C605($payload))  //要求データ長（監視タイマから要求データまでのデータ長）
@@ -51,7 +58,7 @@ This:C1470.append(->$request;->$interfaceCode)
 This:C1470.append(->$request;->$length)
 This:C1470.append(->$request;->$wait)
 This:C1470.append(->$request;->$command)
-This:C1470.append(->$request;->$position)
+This:C1470.append(->$request;->$deviceNumber)
 This:C1470.append(->$request;->$deviceCode)
 This:C1470.append(->$request;->$points)
 This:C1470.append(->$request;->$payload)
